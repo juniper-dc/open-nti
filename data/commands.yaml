@@ -12,7 +12,10 @@ generic_commands:
       show system buffers
       show system statistics icmp | display xml
       show route summary | display xml
-   tags: generic
+      show task io
+      show bgp summary | display xml
+      show snmp statistics | display xml
+   tags: test
 
 lab_commands:
    commands: |

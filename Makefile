@@ -1,7 +1,7 @@
 
 
 # Determine the current git Branch and use that for docker
-BRANCH ?= $(shell git rev-parse --abbrev-ref HEAD)
+BRANCH ?= $(git rev-parse --abbrev-ref HEAD)
 ifeq ($(BRANCH),master)
   IMAGE_TAG = latest
 else
